@@ -1,0 +1,26 @@
+package B2;
+class DengCha{
+	int s,d,n,a=0;
+	public void setStart(int ss){
+		s=ss;
+	}
+	public void setD(int dd) {
+		d=dd;
+	}
+	public void getSum(int nn) {
+		n=nn;
+	}
+	void shuchu() {
+		a=n*s+n*(n-1)*d/2;
+		System.out.println(a);
+	}
+}
+public class B2 {
+	public static void main(String args[]) {
+		DengCha shulie=new DengCha();
+		shulie.setStart(1);
+		shulie.setD(2);
+		shulie.getSum(5);
+		shulie.shuchu();
+	}
+}
